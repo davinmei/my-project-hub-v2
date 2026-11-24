@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 474" role="img" aria-labelledby="title desc">
+  <title id="title">LLM Wiki 工作流程</title>
+  <desc id="desc">核對並登錄來源後執行 Ingest，更新 Wiki。通過 Lint 後，用 Query 建立教學大綱與來源對應，再生成簡報並驗收。證據不足時回查來源，修正後重跑檢查。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
+      <path d="M1 1l4.5 2.5L1 6" fill="none" stroke="#2563eb" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <rect width="480" height="474" rx="18" fill="#f8fafc"/>
+  <g fill="none" stroke="#2563eb" stroke-width="2.6" marker-end="url(#arrow)">
+    <path d="M211 119H266"/>
+    <path d="M362 156V184"/>
+    <path d="M269 224H214"/>
+    <path d="M118 261V289"/>
+    <path d="M211 329H266"/>
+  </g>
+  <g stroke="#bfdbfe" stroke-width="1.2">
+    <rect x="24" y="82" width="187" height="74" rx="13" fill="#fff"/>
+    <rect x="269" y="82" width="187" height="74" rx="13" fill="#eff6ff"/>
+    <rect x="269" y="187" width="187" height="74" rx="13" fill="#eff6ff"/>
+    <rect x="24" y="187" width="187" height="74" rx="13" fill="#eff6ff"/>
+    <rect x="24" y="292" width="187" height="74" rx="13" fill="#fff"/>
+    <rect x="269" y="292" width="187" height="74" rx="13" fill="#fff"/>
+    <rect x="24" y="394" width="432" height="56" rx="12" fill="#eff6ff"/>
+  </g>
+  <g font-family="Noto Sans TC, Microsoft JhengHei, PingFang TC, sans-serif" text-anchor="middle" fill="#1e293b">
+    <text x="240" y="49" font-size="28" font-weight="700">LLM Wiki 工作流程</text>
+    <g font-size="22" font-weight="700">
+      <text x="118" y="115">核對來源</text>
+      <text x="362" y="115">Ingest</text>
+      <text x="362" y="220">Lint</text>
+      <text x="118" y="220">Query</text>
+      <text x="118" y="325">教學簡報</text>
+      <text x="362" y="325">驗收展示</text>
+    </g>
+    <g font-size="16" fill="#475569">
+      <text x="118" y="139">實讀、定位與登錄</text>
+      <text x="362" y="139">更新 Wiki 知識頁</text>
+      <text x="362" y="244">核對引用與算式</text>
+      <text x="118" y="244">整理教學內容</text>
+      <text x="118" y="349">大綱、溯源與 HTML</text>
+      <text x="362" y="349">操作、版面與數值</text>
+      <text x="240" y="417">若證據不足，回查來源或修正 Wiki</text>
+      <text x="240" y="438">修正後重跑 Lint 與受影響的驗收</text>
+    </g>
+  </g>
+</svg>

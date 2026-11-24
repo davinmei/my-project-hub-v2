@@ -3,6 +3,7 @@
     "id": "interview-coach",
     "addedOrder": 1,
     "title": "AI 面試模擬系統｜林教練",
+    "projectType": "課程作業",
     "category": "AI / LLM",
     "summary": "自訂應徵職位、面試官風格與題型，以逐題問答及講評練習面試表達。",
     "description": "以 AI Suite 串接 Groq 語言模型並使用 Gradio 建立面試練習介面。使用者可填寫應徵職位、背景、面試官風格與練習題型，依照回覆繼續追問，最後進入反問及教練講評流程。",
@@ -35,6 +36,7 @@
     "id": "pet-rag-advisor",
     "addedOrder": 2,
     "title": "毛孩新手村｜AI 貓狗飼養顧問",
+    "projectType": "課程作業",
     "category": "RAG",
     "summary": "以貓狗新手飼養文件建立向量知識庫，結合檢索與生成回答，提供可追溯的參考來源。",
     "description": "同一專案分為兩個 Notebook 階段：RAG01 解析飼養文件、建立 Embedding 與 FAISS 索引並輸出知識庫；RAG02 載入索引、檢索相關文件，再透過 Groq 模型生成繁體中文回答，於 Gradio 顯示來源和文件內容。",
@@ -71,6 +73,7 @@
     "id": "ai-trip-reflection",
     "addedOrder": 3,
     "title": "AI 智慧行程規劃與反思助手",
+    "projectType": "課程作業",
     "category": "AI Agent",
     "summary": "以 Planner、Reviewer、Reviser 三階段流程規劃旅遊行程，檢查合理性並產生修正版。",
     "description": "使用者輸入出發地、目的地、時間、人數、預算、交通方式與旅遊偏好後，Reflection Agent 依序產生行程草案、檢查時間與預算等限制，最後根據檢查結果修正行程。Gradio 介面分別呈現初版、反思報告及改善版本。",
@@ -105,6 +108,7 @@
     "id": "packing-checklist",
     "addedOrder": 4,
     "title": "出門準備檢查助手（Ready to Go）",
+    "projectType": "課程作業",
     "category": "Web App",
     "summary": "依上課、上班、旅行等情境建立出門清單，透過逐項勾選、備註與準備進度，確認需要攜帶的物品。",
     "description": "以單一 HTML 檔案整合樣式與互動程式的出門準備工具。使用者可從情境模板挑選物品，建立並管理多份清單，自訂物品名稱與備註，查看準備進度及尚未完成項目。另提供本機使用者分頁、頭像、插畫配色與背景圖片設定，並以 localStorage 保存資料。",
@@ -138,5 +142,66 @@
     "status": "completed",
     "featured": false,
     "imageType": "screenshot"
+  },
+  {
+    "id": "smart-home-llm-wiki",
+    "addedOrder": 5,
+    "title": "智慧家庭能源管理 LLM Wiki",
+    "projectType": "課程作業",
+    "category": "LLM Wiki",
+    "courseWeek": 9,
+    "projectDate": "2026-11-22",
+    "summary": "透過 LLM Wiki 整理六份可追溯的家庭用電來源，製作包含除濕機排程模擬與測驗的九頁互動教學簡報。",
+    "description": "Smart Home Energy Management LLM Wiki 以六份來源建立知識庫，涵蓋經濟部能源署、台電、Virginia Cooperative Extension、ENERGY STAR 與 Home Assistant 的資料。經兩輪 Ingest 整理成來源登錄、六個來源頁、五個概念頁與交叉索引，再透過 Lint 核對引用與算式，從 Wiki 進行教學 Query，將主張與原文定位寫入簡報來源對應表。",
+    "motivation": "家庭用電資訊分散在電價、量測與設備文件中，初學者容易混淆用電量、使用時段與電費。這項課程作業以 LLM 協助整理來源，將讀到的資料編成可查證的 Wiki，再以生活化案例教學。",
+    "features": [
+      "登錄六份來源及原文位置，兩輪 Ingest 將證據整理為來源頁、概念頁與索引。",
+      "以局部及全 Wiki Lint 核對引用、連結、單位與算式，記錄修正與複查結果。",
+      "依已核對的 Wiki 執行教學 Query，製作大綱與逐頁來源對應表。",
+      "九頁 HTML 簡報支援按鈕、頁碼及方向鍵翻頁，並可從引用標記跳到原始資料。",
+      "除濕機排程模擬支援接受及拒絕，更新時段圖表、電量與估算流動電費。最後一頁提供兩題即時回饋測驗。"
+    ],
+    "technologies": [
+      "LLM Wiki",
+      "Markdown",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SVG",
+      "GitHub Pages"
+    ],
+    "results": "完成六份來源的知識索引、兩輪 Ingest 與 Lint 紀錄、教學 Query、來源對應表及九頁互動簡報。除濕機案例使用規則式教學模擬及假設費率，接受時移建議後，案例的總用電量維持 1.50 kWh，估算流動電費從 NT$6.30 降至 NT$4.80。",
+    "lessonsLearned": "這個案例展示了如何用來源 ID 與原文定位，使 AI 協作整理的內容能一路從投影片回查到 Wiki 和原始證據。保留 Lint、修正及驗算紀錄，也讓讀者能分別核對用電量和估算費用。",
+    "image": "assets/images/smart-home-llm-wiki-cover.webp",
+    "imageAlt": "互動簡報第一頁「AI 如何讓智慧家庭更省電？」及住宅用電插圖的實際畫面",
+    "imageType": "screenshot",
+    "systemDiagram": {
+      "src": "assets/images/smart-home-llm-wiki-workflow.svg",
+      "alt": "LLM Wiki 工作流程，從來源實讀與登錄，經 Ingest、Lint 和 Query，到簡報生成與驗收。證據不足時回查來源，修正後重跑檢查。"
+    },
+    "screenshots": [
+      {
+        "src": "assets/images/smart-home-llm-wiki-knowledge.webp",
+        "alt": "互動簡報第六頁的智慧家庭能源管理系統，說明量測、判斷、建議或控制及查核四個步驟"
+      },
+      {
+        "src": "assets/images/smart-home-llm-wiki-simulation.webp",
+        "alt": "互動簡報第八頁，接受除濕機排程建議後的堆疊長條、1.50 kWh 與估算流動電費 NT$4.80"
+      },
+      {
+        "src": "assets/images/smart-home-llm-wiki-quiz.webp",
+        "alt": "互動簡報第九頁兩道測驗答題後，畫面顯示正確答案與解釋"
+      }
+    ],
+    "demoUrl": "https://davinmei.github.io/smart-home-llm-wiki/slides/index.html",
+    "githubUrl": "https://github.com/davinmei/smart-home-llm-wiki",
+    "links": [
+      {
+        "label": "Wiki 知識索引",
+        "url": "https://github.com/davinmei/smart-home-llm-wiki/blob/main/wiki/index.md"
+      }
+    ],
+    "status": "completed",
+    "featured": true
   }
 ]

@@ -1,0 +1,85 @@
+{
+  "intro": {
+    "role": "國立中央大學通訊工程研究所研究生",
+    "roleEn": "M.S. Candidate in Communication Engineering",
+    "description": "具備電機工程與通訊工程背景，關注生成式 AI、智慧家庭、物聯網及網路通訊技術，透過實際專案探索不同技術的應用方式，並持續累積程式開發、系統整合與問題解決經驗。"
+  },
+  "education": [
+    {
+      "school": "國立中央大學",
+      "program": "通訊工程研究所",
+      "degree": "碩士班，就讀中"
+    },
+    {
+      "school": "國立高雄師範大學",
+      "program": "電機工程學系",
+      "degree": "學士"
+    }
+  ],
+  "skills": {
+    "note": "以下為接觸或實作過的技術領域。",
+    "groups": [
+      {
+        "title": "程式開發",
+        "technologies": [
+          "Python",
+          "HTML",
+          "CSS",
+          "JavaScript"
+        ]
+      },
+      {
+        "title": "生成式 AI",
+        "technologies": [
+          "LLM",
+          "RAG",
+          "AI Agent",
+          "LLM Wiki"
+        ]
+      },
+      {
+        "title": "系統與開發工具",
+        "technologies": [
+          "Linux",
+          "Docker",
+          "Git",
+          "GitHub"
+        ]
+      },
+      {
+        "title": "網路與物聯網",
+        "technologies": [
+          "TCP/IP",
+          "Modbus/TCP",
+          "IoT"
+        ]
+      }
+    ]
+  },
+  "interests": [
+    {
+      "title": "生成式 AI 應用",
+      "description": "探索 AI 工具、知識管理與智慧應用系統。"
+    },
+    {
+      "title": "智慧家庭與能源管理",
+      "description": "結合物聯網、設備通訊與能源資料，探索智慧家庭應用。"
+    },
+    {
+      "title": "網路通訊與系統整合",
+      "description": "探索資料傳輸、系統整合及網路通訊技術。"
+    }
+  ],
+  "links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/davinmei"
+    }
+  ],
+  "site": {
+    "paragraphs": [
+      "My Project Hub 是我的個人專案展示平台，最初建立於生成式 AI 課程，透過 AGENTS.md 與資料驅動架構，持續累積及管理不同類型的實作成果。",
+      "新版網站除了改善視覺與作品瀏覽體驗，也支援課程作業、個人專案、產學合作及研究專案等不同類型的作品管理。"
+    ]
+  }
+}

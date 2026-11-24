@@ -16,6 +16,7 @@
       <nav id="main-nav" class="nav-links" aria-label="主要導覽">
         <a href="index.html">首頁</a>
         <a href="projects.html" aria-current="page" class="active">作品總覽</a>
+        <a href="about.html">關於我</a>
       </nav>
     </div>
   </header>
@@ -29,14 +30,37 @@
     <section class="section project-list" aria-labelledby="project-list-title">
       <div class="container">
         <h2 class="visually-hidden" id="project-list-title">作品列表</h2>
-        <div class="toolbar">
+        <form class="toolbar" id="project-filters" aria-label="搜尋與篩選作品">
           <label for="project-search" class="visually-hidden">搜尋作品</label>
           <div class="search-box">
             <span aria-hidden="true">⌕</span>
-            <input id="project-search" type="search" placeholder="搜尋作品名稱、技術、關鍵字…" autocomplete="off">
+            <input id="project-search" type="search" placeholder="搜尋作品名稱、介紹、技術或專案類型…" autocomplete="off">
           </div>
-          <div class="filter-row" id="category-filters" role="group" aria-label="作品分類"></div>
-        </div>
+          <div class="filter-row">
+            <label for="type-filter">專案類型
+              <select id="type-filter">
+                <option value="">全部類型</option>
+                <option>課程作業</option>
+                <option>個人專案</option>
+                <option>產學合作</option>
+                <option>研究專案</option>
+              </select>
+            </label>
+            <label for="category-filter">技術分類
+              <select id="category-filter">
+                <option value="">全部分類</option>
+              </select>
+            </label>
+            <label for="project-sort">排序
+              <select id="project-sort">
+                <option value="newest">最新加入優先</option>
+                <option value="oldest">最早加入優先</option>
+                <option value="title">作品名稱排序</option>
+              </select>
+            </label>
+            <button class="btn btn-secondary" id="clear-filters" type="button">清除條件</button>
+          </div>
+        </form>
         <p class="results-count" id="results-count" aria-live="polite">正在讀取作品…</p>
         <div id="all-projects" class="cards-grid"><p class="loading">正在載入作品…</p></div>
       </div>
@@ -51,12 +75,15 @@
       <nav class="footer-links" aria-label="頁尾導覽">
         <a href="index.html">首頁</a>
         <a href="projects.html">所有作品</a>
+        <a href="about.html">關於我</a>
         <a href="AGENTS.md">開發規範</a>
-        <a href="https://github.com/davinmei/my-project-hub">原版 GitHub</a>
+        <a href="https://github.com/davinmei/my-project-hub-v2">V2 原始碼</a>
+        <a href="https://github.com/davinmei/my-project-hub">V1 原版參考</a>
       </nav>
     </div>
   </footer>
   <script src="data/projects-data.js"></script>
+  <script src="js/site-data.js"></script>
   <script src="js/projects.js"></script>
   <script src="js/main.js"></script>
 </body>

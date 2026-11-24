@@ -25,13 +25,15 @@ async function initHomepage() {
     return;
   }
 
-  const categories = [...new Set(projects.map(project => project.category))];
+  const categories = getProjectValues(projects, 'category');
+  const projectTypes = getProjectValues(projects, 'projectType');
   document.getElementById('project-count').textContent = projects.length;
   document.getElementById('category-count').textContent = categories.length;
+  document.getElementById('type-count').textContent = projectTypes.length;
   document.getElementById('category-list').textContent = categories.join(' · ') || '尚無分類';
 
   const latest = projects.reduce((newest, project, index) => {
-    const order = project.addedOrder ?? index + 1;
+    const order = getAddedOrder(project, index);
     return order >= newest.order ? { project, order } : newest;
   }, { order: 0 }).project;
 
@@ -45,11 +47,10 @@ async function initHomepage() {
 
   const featured = projects.filter(project => project.featured).slice(0, 2);
   if (featured.length) {
-    featuredTarget.replaceChildren(...featured.map(createCard));
+    featuredTarget.replaceChildren(...featured.map(project => createCard(project)));
   } else {
     showError(featuredTarget, '目前沒有精選作品。');
   }
 }
 
 initHomepage();
-initList();
